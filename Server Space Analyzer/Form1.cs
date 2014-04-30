@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Server_Space_Analyzer
 {
-    public partial class LoginForm : Form
+    public partial class Form1 : Form
     {
-        public LoginForm()
+        public Form1()
         {
             InitializeComponent();
+        }
+
+        private void ok_button_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

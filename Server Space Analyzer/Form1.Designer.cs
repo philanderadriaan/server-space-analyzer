@@ -1,6 +1,6 @@
 ﻿namespace Server_Space_Analyzer
 {
-    partial class LoginForm
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@
             this.username_label.AutoSize = true;
             this.username_label.Location = new System.Drawing.Point(10, 10);
             this.username_label.Name = "username_label";
-            this.username_label.Size = new System.Drawing.Size(35, 13);
+            this.username_label.Size = new System.Drawing.Size(55, 13);
             this.username_label.TabIndex = 0;
             this.username_label.Text = "Username";
             // 
@@ -49,7 +49,7 @@
             this.password_label.AutoSize = true;
             this.password_label.Location = new System.Drawing.Point(10, 40);
             this.password_label.Name = "password_label";
-            this.password_label.Size = new System.Drawing.Size(35, 13);
+            this.password_label.Size = new System.Drawing.Size(53, 13);
             this.password_label.TabIndex = 1;
             this.password_label.Text = "Password";
             // 
@@ -75,8 +75,9 @@
             this.ok_button.TabIndex = 4;
             this.ok_button.Text = "OK";
             this.ok_button.UseVisualStyleBackColor = true;
+            this.ok_button.Click += new System.EventHandler(this.ok_button_Click);
             // 
-            // Form1
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,7 +91,6 @@
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.CenterToScreen();
 
         }
 
