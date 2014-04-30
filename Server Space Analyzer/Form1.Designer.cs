@@ -77,7 +77,7 @@
             this.ok_button.UseVisualStyleBackColor = true;
             this.ok_button.Click += new System.EventHandler(this.ok_button_Click);
             // 
-            // LoginForm
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,7 +87,7 @@
             this.Controls.Add(this.username_textbox);
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.username_label);
-            this.Name = "LoginForm";
+            this.Name = "Form1";
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
