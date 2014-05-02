@@ -11,11 +11,15 @@ namespace Server_Space_Analyzer
 {
     public class ExcelWriter
     {
-        public ExcelWriter()
+        FileStream my_stream;
+
+
+        public ExcelWriter(String the_path)
         {
+            my_stream = new FileStream(@the_path, FileMode.Create, FileAccess.Write);
         }
 
-        public void overwrite(String the_path, List<List<String>> the_data)
+        public void overwrite(List<List<String>> the_data)
         {
             int row_count = the_data.Count();
             XSSFWorkbook book = new XSSFWorkbook();
@@ -36,8 +40,7 @@ namespace Server_Space_Analyzer
             {
                 sheet.AutoSizeColumn(i);
             }
-            FileStream stream = new FileStream(@the_path, FileMode.Create, FileAccess.Write);
-            book.Write(stream);
+            book.Write(my_stream);
         }
     }
 }

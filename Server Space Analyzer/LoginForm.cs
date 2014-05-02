@@ -28,9 +28,7 @@ namespace Server_Space_Analyzer
 
             ok_button.Enabled = false;
             ok_button.Text = "Scanning...";
-            XmlDocument document = new XmlDocument();
-            document.Load("nksd_servers.rdg");
-            XmlNodeList servers = document.GetElementsByTagName("name");
+            
             Credential credential = new Credential(username, password);
             Scanner crawler = new Scanner(credential);
             List<List<String>> data = new List<List<String>>();
