@@ -18,7 +18,7 @@ namespace Server_Space_Analyzer
             my_credential = the_credential;
         }
 
-        public List<List<String>> analyze(String the_server)
+        public List<List<String>> scan(String the_server)
         {
             List<List<String>> data = new List<List<String>>();
             try
