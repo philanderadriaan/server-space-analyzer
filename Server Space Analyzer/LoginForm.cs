@@ -38,14 +38,17 @@ namespace Server_Space_Analyzer
             header.Add("Capacity");
             header.Add("Free Space");
             data.Add(header);
-            foreach (XmlElement i in servers)
+
+            XMLReader reader = new XMLReader("nksd_servers.rdg");
+            List<String> servers = reader.read("name");
+            foreach(String server in servers)
             {
-                String server = i.InnerText;
                 List<List<String>> server_data = crawler.scan(server);
                 data = data.Concat(server_data).ToList();
             }
-            ExcelWriter writer = new ExcelWriter();
-            writer.overwrite("Server Spaces.xlsx", data);
+
+            ExcelWriter writer = new ExcelWriter("Server Spaces.xlsx");
+            writer.overwrite(data);
 
         }
 

@@ -10,8 +10,8 @@ namespace Server_Space_Analyzer
     public class Scanner
     {
         private Credential my_credential;
-        List<String> blank = new List<String>();
-        private static Formatter my_formatter = new Formatter();
+        private List<String> blank = new List<String>();
+        private Formatter my_formatter = new Formatter();
 
         public Scanner(Credential the_credential)
         {
