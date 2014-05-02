@@ -1,0 +1,948 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RDCMan schemaVersion="1">
+    <version>2.2</version>
+    <file>
+        <properties>
+            <name>nksd_servers</name>
+            <expanded>True</expanded>
+            <comment />
+            <logonCredentials inherit="FromParent" />
+            <connectionSettings inherit="FromParent" />
+            <gatewaySettings inherit="FromParent" />
+            <remoteDesktop inherit="FromParent" />
+            <localResources inherit="FromParent" />
+            <securitySettings inherit="FromParent" />
+            <displaySettings inherit="FromParent" />
+        </properties>
+        <group>
+            <properties>
+                <name>MSP Servers</name>
+                <expanded>False</expanded>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </properties>
+            <server>
+                <name>DW-MSP</name>
+                <displayName>DW-MSP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>KM-MSP</name>
+                <displayName>KM-MSP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>PE-MSP</name>
+                <displayName>PE-MSP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>PM-MSP</name>
+                <displayName>PM-MSP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RG-MSP</name>
+                <displayName>RG-MSP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>SE-MSP</name>
+                <displayName>SE-MSP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>VE-MSP</name>
+                <displayName>VE-MSP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+        </group>
+        <group>
+            <properties>
+                <name>NKRC</name>
+                <expanded>True</expanded>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </properties>
+            <server>
+                <name>NHAPPS</name>
+                <displayName>NHAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>PEAPPS</name>
+                <displayName>PEAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>PMAPPS</name>
+                <displayName>PMAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RCDC</name>
+                <displayName>RCDC</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RCFP</name>
+                <displayName>RCFP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RCMANAGE</name>
+                <displayName>RCMANAGE</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+        </group>
+        <group>
+            <properties>
+                <name>NKRN</name>
+                <expanded>False</expanded>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </properties>
+            <server>
+                <name>KHAPPS</name>
+                <displayName>KHAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>KNAPPS</name>
+                <displayName>KNAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RGAPPS</name>
+                <displayName>RGAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RNDC</name>
+                <displayName>RNDC</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RNFP</name>
+                <displayName>RNFP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RNMANAGE</name>
+                <displayName>RNMANAGE</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>TRAPPS</name>
+                <displayName>TRAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+        </group>
+        <group>
+            <properties>
+                <name>NKRS</name>
+                <expanded>False</expanded>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </properties>
+            <server>
+                <name>DWAPPS</name>
+                <displayName>DWAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>HPAPPS</name>
+                <displayName>HPAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RSDC</name>
+                <displayName>RSDC</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RSFP</name>
+                <displayName>RSFP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RSMANAGE</name>
+                <displayName>RSMANAGE</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>SEAPPS</name>
+                <displayName>SEAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>VEAPPS</name>
+                <displayName>VEAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+        </group>
+        <group>
+            <properties>
+                <name>Physical Servers</name>
+                <expanded>False</expanded>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </properties>
+            <server>
+                <name>DODPM01</name>
+                <displayName>DODPM01</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>SLOTH</name>
+                <displayName>SLOTH</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+        </group>
+        <group>
+            <properties>
+                <name>Regional Servers</name>
+                <expanded>True</expanded>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </properties>
+            <server>
+                <name>NKRC</name>
+                <displayName>NKRC</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKRN</name>
+                <displayName>NKRN</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKRS</name>
+                <displayName>NKRS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+        </group>
+        <group>
+            <properties>
+                <name>Thin client servers</name>
+                <expanded>False</expanded>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </properties>
+            <server>
+                <name>KHTCS</name>
+                <displayName>KHTCS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKHS-TCS</name>
+                <displayName>NKHS-TCS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>RGLAB</name>
+                <displayName>RGLAB</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>SELAB</name>
+                <displayName>SELAB</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>VELAB</name>
+                <displayName>VELAB</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+        </group>
+        <group>
+            <properties>
+                <name>Virtual Hosts</name>
+                <expanded>True</expanded>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </properties>
+            <server>
+                <name>ENVY</name>
+                <displayName>ENVY</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>GREED</name>
+                <displayName>GREED</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>PRIDE</name>
+                <displayName>PRIDE</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>WRATH</name>
+                <displayName>WRATH</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+        </group>
+        <group>
+            <properties>
+                <name>Virtual Servers</name>
+                <expanded>True</expanded>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </properties>
+            <server>
+                <name>SCCMSQL</name>
+                <displayName>SCCMSQL</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>DODC</name>
+                <displayName>DODC</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>DODC2</name>
+                <displayName>DODC2</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>DOFMP</name>
+                <displayName>DOFMP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>DOFP</name>
+                <displayName>DOFP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>DOGA</name>
+                <displayName>DOGA</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>DOMONITOR</name>
+                <displayName>DOMONITOR</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>DOPOWER</name>
+                <displayName>DOPOWER</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>DORP</name>
+                <displayName>DORP</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>EVS1</name>
+                <displayName>EVS1</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>MOODLE</name>
+                <displayName>MOODLE</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKADFS1</name>
+                <displayName>NKADFS1</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKADFS2</name>
+                <displayName>NKADFS2</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKADFSP1</name>
+                <displayName>NKADFSP1</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKADFSP2</name>
+                <displayName>NKADFSP2</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKAPPS</name>
+                <displayName>NKAPPS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKCONFIG</name>
+                <displayName>NKCONFIG</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKDIRSYNC</name>
+                <displayName>NKDIRSYNC</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKEXCHANGE</name>
+                <displayName>NKEXCHANGE</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKEXCHANGE2</name>
+                <displayName>NKEXCHANGE2</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKSDSMS</name>
+                <displayName>NKSDSMS</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKSDWEB</name>
+                <displayName>NKSDWEB</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKSECURITY</name>
+                <displayName>NKSECURITY</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>NKVMM</name>
+                <displayName>NKVMM</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>SKYWARDDATA</name>
+                <displayName>SKYWARDDATA</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>TECHWIKI</name>
+                <displayName>TECHWIKI</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+        </group>
+    </file>
+</RDCMan>
