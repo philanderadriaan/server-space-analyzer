@@ -26,7 +26,6 @@ namespace Server_Space_Analyzer
             String password = password_textbox.Text;
             my_credential = new Credential(username, password);
 
-            MessageBox.Show("Scan complete.");
             ok_button.Enabled = false;
             ok_button.Text = "Scanning...";
             XmlDocument document = new XmlDocument();
