@@ -4,19 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Server_Disk_Space_Analyzer
+namespace Server_Space_Analyzer
 {
     public class Credential
     {
         private String my_username;
         private String my_password;
 
-        public Credential()
+        public Credential(String the_username, String the_password)
         {
-            Console.Out.Write("Username:");
-            my_username = Console.ReadLine();
-            Console.Out.Write("Password:");
-            my_password = Console.ReadLine();
+            my_username = the_username;
+            my_password = the_password;
         }
 
         public String getUsername()

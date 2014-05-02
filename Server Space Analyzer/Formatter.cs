@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Server_Disk_Space_Analyzer
+namespace Server_Space_Analyzer
 {
     public class Formatter
     {

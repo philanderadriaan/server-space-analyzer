@@ -5,17 +5,17 @@ using System.Management;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Server_Disk_Space_Analyzer
+namespace Server_Space_Analyzer
 {
-    public class Crawler
+    public class Scanner
     {
         private Credential my_credential;
         List<String> blank = new List<String>();
         private static Formatter my_formatter = new Formatter();
 
-        public Crawler()
+        public Scanner(Credential the_credential)
         {
-            my_credential = new Credential();
+            my_credential = the_credential;
         }
 
         public List<List<String>> analyze(String the_server)
