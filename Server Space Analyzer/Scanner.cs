@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Server_Space_Analyzer
 {
-    public class DiskScanner
+    public class Scanner
     {
         private Credential my_credential;
         private List<String> blank = new List<String>();
         private Formatter my_formatter = new Formatter();
 
-        public DiskScanner(Credential the_credential)
+        public Scanner(Credential the_credential)
         {
             my_credential = the_credential;
         }

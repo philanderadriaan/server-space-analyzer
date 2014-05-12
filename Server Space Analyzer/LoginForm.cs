@@ -30,7 +30,7 @@ namespace Server_Space_Analyzer
             ok_button.Text = "Scanning...";
             
             Credential credential = new Credential(username, password);
-            DiskScanner crawler = new DiskScanner(credential);
+            Scanner crawler = new Scanner(credential);
             List<List<String>> data = new List<List<String>>();
             List<String> header = new List<String>();
             header.Add("Server");
