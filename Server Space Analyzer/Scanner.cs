@@ -11,8 +11,8 @@ namespace Server_Space_Analyzer
     public class Scanner
     {
         private Credential my_credential;
-        private List<String> blank = new List<String>();
         private Formatter my_formatter = new Formatter();
+        private List<String> errors = new List<String>();
 
         public Scanner(Credential the_credential)
         {
@@ -37,44 +37,29 @@ namespace Server_Space_Analyzer
                     name_space += ".";
                 }
                 name_space += @"\root\cimv2";
-                ManagementScope scope = new ManagementScope(name_space, options);
-                ObjectQuery query = new ObjectQuery("select VolumeName, Name, Size, Freespace from Win32_LogicalDisk where DriveType=3");
-                ManagementObjectSearcher searcher = new ManagementObjectSearcher(scope, query);
-                ManagementObjectCollection collection = searcher.Get();
-                Console.Out.WriteLine();
-                Console.Out.WriteLine(the_server);
-                Boolean is_first = true;
-                data.Add(blank);
+                ManagementObjectCollection collection = new ManagementObjectSearcher(new ManagementScope(name_space, options), new ObjectQuery("select VolumeName, Name, Size, Freespace from Win32_LogicalDisk where DriveType=3")).Get();
+                bool first = true;
+                data.Add(new List<String>());
                 foreach (ManagementObject i in collection)
                 {
-                    String volume = i["VolumeName"].ToString();
-                    String name = i["Name"].ToString();
-                    String total = i["Size"].ToString();
-                    String free = i["FreeSpace"].ToString();
-                    String formatted_name = my_formatter.formatName(volume, name);
-                    String formatted_total = my_formatter.formatCapacity(total);
-                    String formatted_free = my_formatter.formatCapacity(free);
                     List<String> row = new List<String>();
-                    if (is_first)
+                    if (first)
                     {
                         row.Add(the_server);
-                        is_first = false;
+                        first = false;
                     }
                     else
                     {
                         row.Add("");
                     }
-                    row.Add(formatted_name);
-                    row.Add(formatted_total);
-                    row.Add(formatted_free);
+                    row.Add(my_formatter.formatName(i["VolumeName"].ToString(), i["Name"].ToString()));
+                    row.Add(my_formatter.formatCapacity(i["Size"].ToString()));
+                    row.Add(my_formatter.formatCapacity(i["FreeSpace"].ToString()));
                     data.Add(row);
-                    String output = my_formatter.format(volume, name, total, free);
-                    Console.Out.WriteLine(output);
                 }
             }
             catch
             {
-                String upper = the_server.ToUpper();
                 if (the_server.Equals(the_server.ToUpper()))
                 {
                     MessageBox.Show("Can't connect to " + the_server);

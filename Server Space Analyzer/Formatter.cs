@@ -17,33 +17,27 @@ namespace Server_Space_Analyzer
 
         public String format(String the_volume, String the_name, String the_total, String the_free)
         {
-            String name = formatName(the_volume, the_name);
-            String total = formatCapacity(the_total);
-            String free = formatCapacity(the_free);
-            StringBuilder string_builder = new StringBuilder();
-            string_builder.Append(name);
-            string_builder.Append(" ");
-            string_builder.Append(total);
-            string_builder.Append(" ");
-            string_builder.Append(free);
-            String formatted_string = string_builder.ToString();
-            return formatted_string;
+            StringBuilder builder = new StringBuilder();
+            builder.Append(formatCapacity(the_free));
+            builder.Append(" ");
+            builder.Append(formatCapacity(the_total));
+            builder.Append(" ");
+            builder.Append(formatCapacity(the_free));
+            return builder.ToString();
         }
 
         public String formatName(String the_volume, String the_name)
         {
-            Boolean has_volume = !"".Equals(the_volume);
-            StringBuilder string_builder = new StringBuilder();
-            if (has_volume)
+            StringBuilder builder = new StringBuilder();
+            if (!"".Equals(the_volume))
             {
-                string_builder.Append(the_volume);
-                string_builder.Append(" ");
+                builder.Append(the_volume);
+                builder.Append(" ");
             }
-            string_builder.Append("(");
-            string_builder.Append(the_name);
-            string_builder.Append(")");
-            String formatted_name = string_builder.ToString();
-            return formatted_name;
+            builder.Append("(");
+            builder.Append(the_name);
+            builder.Append(")");
+            return builder.ToString();
         }
 
         public String formatCapacity(String the_capacity)
@@ -55,8 +49,7 @@ namespace Server_Space_Analyzer
             double capacity_in_kb = capacity_in_b / B_PER_KB;
             double capacity_in_mb = capacity_in_kb / B_PER_KB;
             double capacity_in_gb = capacity_in_mb / B_PER_KB;
-            Boolean below_one_gb = capacity_in_gb < 1;
-            if (below_one_gb)
+            if (capacity_in_gb < 1)
             {
                 capacity = capacity_in_mb;
                 decimal_points = 0;
@@ -68,13 +61,11 @@ namespace Server_Space_Analyzer
                 decimal_points = 2;
                 unit = "GB";
             }
-            double capacity_output = Math.Round(capacity, decimal_points);
-            StringBuilder string_builder = new StringBuilder();
-            string_builder.Append(capacity_output);
-            string_builder.Append(" ");
-            string_builder.Append(unit);
-            String formatted_capacity = string_builder.ToString();
-            return formatted_capacity;
+            StringBuilder builder = new StringBuilder();
+            builder.Append(Math.Round(capacity, decimal_points));
+            builder.Append(" ");
+            builder.Append(unit);
+            return builder.ToString();
         }
     }
 }
