@@ -49,16 +49,8 @@ namespace Server_Space_Analyzer
 
             ExcelWriter writer = new ExcelWriter("Server Spaces.xlsx");
             writer.overwrite(data);
-        }
-
-        public Credential getCredential()
-        {
-            return my_credential;
-        }
-
-        public static void test()
-        {
-
+            System.Diagnostics.Process.Start(@"Server Spaces.xlsx");
+            Close();
         }
     }
 }
