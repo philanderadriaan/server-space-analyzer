@@ -13,7 +13,6 @@ namespace Server_Space_Analyzer
 {
     public partial class LoginForm : Form
     {
-        Credential my_credential;
 
         public LoginForm()
         {
@@ -22,16 +21,13 @@ namespace Server_Space_Analyzer
 
         private void ok_button_Click(object sender, EventArgs e)
         {
-            String username = username_textbox.Text;
-            String password = password_textbox.Text;
-            my_credential = new Credential(username, password);
 
             ok_button.Enabled = false;
             ok_button.Text = "Scanning...";
-            
-            Credential credential = new Credential(username, password);
-            Scanner crawler = new Scanner(credential);
+
+            Scanner scanner = new Scanner(new Credential(password_textbox.Text, password_textbox.Text));
             List<List<String>> data = new List<List<String>>();
+
             List<String> header = new List<String>();
             header.Add("Server");
             header.Add("Volume");
@@ -39,16 +35,13 @@ namespace Server_Space_Analyzer
             header.Add("Free Space");
             data.Add(header);
 
-            XMLReader reader = new XMLReader("nksd_servers.rdg");
-            List<String> servers = reader.read("name");
-            foreach(String server in servers)
+            List<String> servers = new XMLReader("nksd_servers.rdg").read("name");
+            foreach (String server in servers)
             {
-                List<List<String>> server_data = crawler.scan(server);
-                data = data.Concat(server_data).ToList();
+                data = data.Concat(scanner.scan(server)).ToList();
             }
 
-            ExcelWriter writer = new ExcelWriter("Server Spaces.xlsx");
-            writer.overwrite(data);
+            new ExcelWriter("Server Spaces.xlsx").overwrite(data);
             System.Diagnostics.Process.Start(@"Server Spaces.xlsx");
             Close();
         }

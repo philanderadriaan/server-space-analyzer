@@ -21,22 +21,20 @@ namespace Server_Space_Analyzer
 
         public void overwrite(List<List<String>> the_data)
         {
-            int row_count = the_data.Count();
             XSSFWorkbook book = new XSSFWorkbook();
             ISheet sheet = book.CreateSheet();
-            for (int i = 0; i < row_count; i++)
+            for (int i = 0; i < the_data.Count(); i++)
             {
                 List<String> row_data = the_data[i];
-                int column_count = row_data.Count();
                 IRow row = sheet.CreateRow(i);
-                for (int j = 0; j < column_count; j++)
+                for (int j = 0; j < row_data.Count(); j++)
                 {
                     String cell_data = row_data[j];
                     ICell cell = row.CreateCell(j, CellType.String);
                     cell.SetCellValue(cell_data);
                 }
             }
-            for (int i = 0; i < row_count; i++)
+            for (int i = 0; i < the_data.Count(); i++)
             {
                 sheet.AutoSizeColumn(i);
             }

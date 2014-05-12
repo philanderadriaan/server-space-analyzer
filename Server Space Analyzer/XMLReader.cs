@@ -9,11 +9,10 @@ namespace Server_Space_Analyzer
 {
     public class XMLReader
     {
-        private XmlDocument my_document;
+        private XmlDocument my_document = new XmlDocument();;
 
         public XMLReader(String the_path)
         {
-            my_document = new XmlDocument();
             my_document.Load(the_path);
         }
 
@@ -23,8 +22,7 @@ namespace Server_Space_Analyzer
             XmlNodeList nodes = my_document.GetElementsByTagName(the_tag);
             foreach (XmlElement element in nodes)
             {
-                String text = element.InnerText;
-                output.Add(text);
+                output.Add(element.InnerText);
             }
             return output;
         }

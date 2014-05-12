@@ -4,6 +4,7 @@ using System.Linq;
 using System.Management;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Server_Space_Analyzer
 {
@@ -73,6 +74,11 @@ namespace Server_Space_Analyzer
             }
             catch
             {
+                String upper = the_server.ToUpper();
+                if (the_server.Equals(the_server.ToUpper()))
+                {
+                    MessageBox.Show("Can't connect to " + the_server);
+                }
             }
             return data;
         }
