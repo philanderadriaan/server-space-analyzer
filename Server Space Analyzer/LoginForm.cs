@@ -30,7 +30,7 @@ namespace Server_Space_Analyzer
             ok_button.Text = "Scanning...";
             
             Credential credential = new Credential(username, password);
-            Scanner crawler = new Scanner(credential);
+            DiskScanner crawler = new DiskScanner(credential);
             List<List<String>> data = new List<List<String>>();
             List<String> header = new List<String>();
             header.Add("Server");
@@ -49,12 +49,16 @@ namespace Server_Space_Analyzer
 
             ExcelWriter writer = new ExcelWriter("Server Spaces.xlsx");
             writer.overwrite(data);
-
         }
 
         public Credential getCredential()
         {
             return my_credential;
+        }
+
+        public static void test()
+        {
+
         }
     }
 }
