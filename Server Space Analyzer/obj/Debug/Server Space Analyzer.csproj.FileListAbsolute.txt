@@ -6,3 +6,4 @@ C:\Users\padriaan.NKSCHOOLS\Documents\Visual Studio 2013\Projects\Server Space A
 C:\Users\padriaan.NKSCHOOLS\Documents\Visual Studio 2013\Projects\Server Space Analyzer\Server Space Analyzer\obj\Debug\Server Space Analyzer.csproj.GenerateResource.Cache
 C:\Users\padriaan.NKSCHOOLS\Documents\Visual Studio 2013\Projects\Server Space Analyzer\Server Space Analyzer\obj\Debug\Server Space Analyzer.exe
 C:\Users\padriaan.NKSCHOOLS\Documents\Visual Studio 2013\Projects\Server Space Analyzer\Server Space Analyzer\obj\Debug\Server Space Analyzer.pdb
+C:\Users\padriaan.NKSCHOOLS\Documents\Visual Studio 2013\Projects\Server Space Analyzer\Server Space Analyzer\bin\Debug\Server Space Analyzer.exe

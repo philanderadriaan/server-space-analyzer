@@ -23,7 +23,7 @@ namespace Server_Space_Analyzer
         {
             ok_button.Enabled = false;
             Scanner scanner = new Scanner(new Credential(username_textbox.Text, password_textbox.Text));
-            scanner.SomethingHappened += this.HandleEvent;
+            scanner.global_handler += this.HandleEvent;
 
             List<List<string>> data = new List<List<string>>();
             data.Add(new List<string>(new string[] { "Server", "Volume", "Capacity", "Free Space" }));

@@ -10,7 +10,7 @@ namespace Server_Space_Analyzer
 {
     class Scanner
     {
-        public event EventHandler SomethingHappened;
+        public event EventHandler global_handler;
 
         private String my_server;
         private Credential my_credential;
@@ -31,7 +31,7 @@ namespace Server_Space_Analyzer
         public List<List<string>> scan(string the_server)
         {
             my_server = the_server;
-            EventHandler handler = SomethingHappened;
+            EventHandler handler = global_handler;
             if (handler != null)
             {
                 handler(this, EventArgs.Empty);
