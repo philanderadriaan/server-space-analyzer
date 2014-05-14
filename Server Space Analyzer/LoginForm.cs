@@ -25,7 +25,7 @@ namespace Server_Space_Analyzer
             ok_button.Text = "Scanning...";
             Scanner scanner = new Scanner(new Credential(username_textbox.Text, password_textbox.Text));
             List<List<String>> data = new List<List<String>>();
-            data.Add(new List<String>(new String[]{"Server", "Volume", "Capacity", "Free Space"}));
+            data.Add(new List<String>(new String[] { "Server", "Volume", "Capacity", "Free Space" }));
             List<String> servers = new RDGReader("nksd_servers.rdg").read("name");
             foreach (String server in servers)
             {
@@ -33,7 +33,19 @@ namespace Server_Space_Analyzer
             }
             new XLSWriter("Server Spaces.xlsx").overwrite(data);
             Hide();
-            MessageBox.Show(scanner.getErrors());
+
+
+            String message = "Operation complete.";
+            if (scanner.getErrors().Count() > 0)
+            {
+                message += "\n\nCannot connect to:";
+                foreach (String server in scanner.getErrors())
+                {
+                    message += "\n" + server;
+                }
+            }
+            MessageBox.Show(message);
+
             System.Diagnostics.Process.Start(@"Server Spaces.xlsx");
             Close();
         }

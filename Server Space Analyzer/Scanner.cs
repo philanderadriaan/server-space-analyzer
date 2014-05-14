@@ -12,7 +12,8 @@ namespace Server_Space_Analyzer
     {
         private Credential my_credential;
         private Formatter my_formatter = new Formatter();
-        private String errors = "Can't connect to:\n";
+        private List<String> errors = new List<String>();
+
 
         public Scanner(Credential the_credential)
         {
@@ -62,12 +63,12 @@ namespace Server_Space_Analyzer
             }
             catch
             {
-                errors += the_server + "\n";    
+                errors.Add(the_server);    
             }
             return data;
         }
 
-        public String getErrors()
+        public List<String> getErrors()
         {
             return errors;
         }
