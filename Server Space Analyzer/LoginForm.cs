@@ -22,7 +22,6 @@ namespace Server_Space_Analyzer
         private void ok_button_Click(object sender, EventArgs e)
         {
             ok_button.Enabled = false;
-            ok_button.Text = "Scanning...";
             Scanner scanner = new Scanner(new Credential(username_textbox.Text, password_textbox.Text));
             List<List<String>> data = new List<List<String>>();
             data.Add(new List<String>(new String[] { "Server", "Volume", "Capacity", "Free Space" }));
@@ -52,7 +51,7 @@ namespace Server_Space_Analyzer
 
         public void HandleEvent(object sender, EventArgs args)
         {
-
+            ok_button.Text = "Scanning " + args.ToString();
         }
     }
 }
