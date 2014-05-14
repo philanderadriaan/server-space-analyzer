@@ -38,10 +38,7 @@ namespace Server_Space_Analyzer
                     name += ".";
                 }
                 name += @"\root\cimv2";
-                ManagementScope scope = new ManagementScope(name, options);
-                ObjectQuery query = new ObjectQuery("select VolumeName, Name, Size, Freespace from Win32_LogicalDisk where DriveType=3");
-                ManagementObjectSearcher searcher = new ManagementObjectSearcher(scope, query);
-                ManagementObjectCollection collection = searcher.Get();
+                ManagementObjectCollection collection = new ManagementObjectSearcher(new ManagementScope(name, options), new ObjectQuery("select VolumeName, Name, Size, Freespace from Win32_LogicalDisk where DriveType=3")).Get();
 
                 bool first = true;
                 data.Add(new List<String>());
