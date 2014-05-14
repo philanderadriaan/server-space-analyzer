@@ -7,18 +7,18 @@ using System.Xml;
 
 namespace Server_Space_Analyzer
 {
-    public class RDGReader
+    class RDGReader
     {
         private XmlDocument my_document = new XmlDocument();
 
-        public RDGReader(String the_path)
+        public RDGReader(string the_path)
         {
             my_document.Load(the_path);
         }
 
-        public List<String> read(String the_tag)
+        public List<string> read(string the_tag)
         {
-            List<String> output = new List<String>();
+            List<string> output = new List<string>();
             XmlNodeList nodes = my_document.GetElementsByTagName(the_tag);
             foreach (XmlElement element in nodes)
             {

@@ -1,4 +1,5 @@
-﻿namespace Server_Space_Analyzer
+﻿using System.Drawing;
+namespace Server_Space_Analyzer
 {
     partial class LoginForm
     {
@@ -33,6 +34,7 @@
             this.username_textbox = new System.Windows.Forms.TextBox();
             this.password_textbox = new System.Windows.Forms.TextBox();
             this.ok_button = new System.Windows.Forms.Button();
+            this.status_label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // username_label
@@ -78,11 +80,21 @@
             this.ok_button.UseVisualStyleBackColor = true;
             this.ok_button.Click += new System.EventHandler(this.ok_button_Click);
             // 
+            // label1
+            // 
+            this.status_label.AutoSize = true;
+            this.status_label.Location = new System.Drawing.Point(10, 70);
+            this.status_label.Name = "StatusLabel";
+            this.status_label.Size = new System.Drawing.Size(160, 13);
+            this.status_label.TabIndex = 5;
+            this.status_label.Text = "";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(180, 100);
+            this.Controls.Add(this.status_label);
             this.Controls.Add(this.ok_button);
             this.Controls.Add(this.password_textbox);
             this.Controls.Add(this.username_textbox);
@@ -92,7 +104,6 @@
             this.Text = "Server Space Analyzer";
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.CenterToScreen();
 
         }
 
@@ -103,5 +114,6 @@
         private System.Windows.Forms.TextBox username_textbox;
         private System.Windows.Forms.TextBox password_textbox;
         private System.Windows.Forms.Button ok_button;
+        private System.Windows.Forms.Label status_label;
     }
 }

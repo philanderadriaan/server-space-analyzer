@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Server_Space_Analyzer
 {
-    public class Formatter
+   class Formatter
     {
         private static readonly int B_PER_KB = 1024;
 
@@ -15,7 +15,7 @@ namespace Server_Space_Analyzer
 
         }
 
-        public String format(String the_volume, String the_name, String the_total, String the_free)
+        public string format(string the_volume, string the_name, string the_total, string the_free)
         {
             StringBuilder builder = new StringBuilder();
             builder.Append(formatCapacity(the_free));
@@ -26,7 +26,7 @@ namespace Server_Space_Analyzer
             return builder.ToString();
         }
 
-        public String formatName(String the_volume, String the_name)
+        public string formatName(string the_volume, string the_name)
         {
             StringBuilder builder = new StringBuilder();
             if (!"".Equals(the_volume))
@@ -40,11 +40,11 @@ namespace Server_Space_Analyzer
             return builder.ToString();
         }
 
-        public String formatCapacity(String the_capacity)
+        public string formatCapacity(string the_capacity)
         {
             double capacity;
             int decimal_points;
-            String unit;
+            string unit;
             double capacity_in_b = System.Convert.ToDouble(the_capacity);
             double capacity_in_kb = capacity_in_b / B_PER_KB;
             double capacity_in_mb = capacity_in_kb / B_PER_KB;

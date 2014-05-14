@@ -21,12 +21,14 @@ namespace Server_Space_Analyzer
 
         private void ok_button_Click(object sender, EventArgs e)
         {
-            ok_button.Enabled = false;
+            ok_button.Hide();
             Scanner scanner = new Scanner(new Credential(username_textbox.Text, password_textbox.Text));
-            List<List<String>> data = new List<List<String>>();
-            data.Add(new List<String>(new String[] { "Server", "Volume", "Capacity", "Free Space" }));
-            List<String> servers = new RDGReader("nksd_servers.rdg").read("name");
-            foreach (String server in servers)
+            scanner.SomethingHappened += this.HandleEvent;
+
+            List<List<string>> data = new List<List<string>>();
+            data.Add(new List<string>(new string[] { "Server", "Volume", "Capacity", "Free Space" }));
+            List<string> servers = new RDGReader("nksd_servers.rdg").read("name");
+            foreach (string server in servers)
             {
                 data = data.Concat(scanner.scan(server)).ToList();
             }
@@ -34,11 +36,11 @@ namespace Server_Space_Analyzer
             Hide();
 
 
-            String message = "Operation complete.";
+            string message = "Operation complete.";
             if (scanner.getErrors().Count() > 0)
             {
                 message += "\n\nCannot connect to:";
-                foreach (String server in scanner.getErrors())
+                foreach (string server in scanner.getErrors())
                 {
                     message += "\n" + server;
                 }
@@ -51,7 +53,10 @@ namespace Server_Space_Analyzer
 
         public void HandleEvent(object sender, EventArgs args)
         {
-            ok_button.Text = "Scanning " + args.ToString();
+            status_label.Text = "Scanning " + ((Scanner)sender).getServer();
+            status_label.TextAlign = ContentAlignment.MiddleCenter;
+            
+            Console.WriteLine(ok_button.Text);
         }
     }
 }
