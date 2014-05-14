@@ -49,5 +49,10 @@ namespace Server_Space_Analyzer
             System.Diagnostics.Process.Start(@"Server Spaces.xlsx");
             Close();
         }
+
+        public void HandleEvent(object sender, EventArgs args)
+        {
+
+        }
     }
 }

@@ -10,6 +10,8 @@ namespace Server_Space_Analyzer
 {
     public class Scanner
     {
+        public event EventHandler SomethingHappened;
+
         private Credential my_credential;
         private Formatter my_formatter = new Formatter();
         private List<String> errors = new List<String>();
@@ -22,7 +24,12 @@ namespace Server_Space_Analyzer
 
         public List<List<String>> scan(String the_server)
         {
-            Console.WriteLine(the_server);
+            EventHandler handler = SomethingHappened;
+            if (handler != null)
+            {
+                handler(this, EventArgs.Empty);
+            }
+
             List<List<String>> data = new List<List<String>>();
             try
             {
@@ -63,7 +70,7 @@ namespace Server_Space_Analyzer
             }
             catch
             {
-                errors.Add(the_server);    
+                errors.Add(the_server);
             }
             return data;
         }
