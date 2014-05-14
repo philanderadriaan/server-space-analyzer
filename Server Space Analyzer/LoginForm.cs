@@ -31,7 +31,7 @@ namespace Server_Space_Analyzer
             {
                 data = data.Concat(scanner.scan(server)).ToList();
             }
-            new ExcelWriter("Server Spaces.xlsx").overwrite(data);
+            new XLSWriter("Server Spaces.xlsx").overwrite(data);
             Hide();
             MessageBox.Show(scanner.getErrors());
             System.Diagnostics.Process.Start(@"Server Spaces.xlsx");

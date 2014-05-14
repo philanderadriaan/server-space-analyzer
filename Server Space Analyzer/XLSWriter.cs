@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace Server_Space_Analyzer
 {
-    public class ExcelWriter
+    public class XLSWriter
     {
         FileStream my_stream;
 
 
-        public ExcelWriter(String the_path)
+        public XLSWriter(String the_path)
         {
             my_stream = new FileStream(@the_path, FileMode.Create, FileAccess.Write);
         }
