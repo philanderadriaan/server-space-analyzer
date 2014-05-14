@@ -23,7 +23,7 @@ namespace Server_Space_Analyzer
         {
             Console.WriteLine(the_server);
             List<List<String>> data = new List<List<String>>();
-            /*try
+            try
             {
                 ConnectionOptions options = new ConnectionOptions();
                 options.Username = my_credential.getUsername();
@@ -65,11 +65,8 @@ namespace Server_Space_Analyzer
             }
             catch
             {
-                Console.WriteLine("Error");
-                //MessageBox.Show(the_server);
-                //Application.Exit();
-                //errors += the_server + "\n";    
-            }*/
+                errors += the_server + "\n";    
+            }
             return data;
         }
 

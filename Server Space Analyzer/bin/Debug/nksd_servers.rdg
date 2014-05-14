@@ -632,18 +632,6 @@
                 <displaySettings inherit="FromParent" />
             </properties>
             <server>
-                <name>SCCMSQL</name>
-                <displayName>SCCMSQL</displayName>
-                <comment />
-                <logonCredentials inherit="FromParent" />
-                <connectionSettings inherit="FromParent" />
-                <gatewaySettings inherit="FromParent" />
-                <remoteDesktop inherit="FromParent" />
-                <localResources inherit="FromParent" />
-                <securitySettings inherit="FromParent" />
-                <displaySettings inherit="FromParent" />
-            </server>
-            <server>
                 <name>DODC</name>
                 <displayName>DODC</displayName>
                 <comment />
@@ -910,6 +898,18 @@
             <server>
                 <name>NKVMM</name>
                 <displayName>NKVMM</displayName>
+                <comment />
+                <logonCredentials inherit="FromParent" />
+                <connectionSettings inherit="FromParent" />
+                <gatewaySettings inherit="FromParent" />
+                <remoteDesktop inherit="FromParent" />
+                <localResources inherit="FromParent" />
+                <securitySettings inherit="FromParent" />
+                <displaySettings inherit="FromParent" />
+            </server>
+            <server>
+                <name>SCCMSQL</name>
+                <displayName>SCCMSQL</displayName>
                 <comment />
                 <logonCredentials inherit="FromParent" />
                 <connectionSettings inherit="FromParent" />
