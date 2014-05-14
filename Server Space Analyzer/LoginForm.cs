@@ -21,7 +21,7 @@ namespace Server_Space_Analyzer
 
         private void ok_button_Click(object sender, EventArgs e)
         {
-            ok_button.Hide();
+            ok_button.Enabled = false;
             Scanner scanner = new Scanner(new Credential(username_textbox.Text, password_textbox.Text));
             scanner.SomethingHappened += this.HandleEvent;
 
@@ -54,9 +54,6 @@ namespace Server_Space_Analyzer
         public void HandleEvent(object sender, EventArgs args)
         {
             status_label.Text = "Scanning " + ((Scanner)sender).getServer();
-            status_label.TextAlign = ContentAlignment.MiddleCenter;
-            
-            Console.WriteLine(ok_button.Text);
         }
     }
 }

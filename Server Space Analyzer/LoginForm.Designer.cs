@@ -40,7 +40,7 @@ namespace Server_Space_Analyzer
             // username_label
             // 
             this.username_label.AutoSize = true;
-            this.username_label.Location = new System.Drawing.Point(10, 10);
+            this.username_label.Location = new System.Drawing.Point(10, 30);
             this.username_label.Name = "username_label";
             this.username_label.Size = new System.Drawing.Size(55, 13);
             this.username_label.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace Server_Space_Analyzer
             // password_label
             // 
             this.password_label.AutoSize = true;
-            this.password_label.Location = new System.Drawing.Point(10, 40);
+            this.password_label.Location = new System.Drawing.Point(10, 60);
             this.password_label.Name = "password_label";
             this.password_label.Size = new System.Drawing.Size(53, 13);
             this.password_label.TabIndex = 1;
@@ -57,14 +57,14 @@ namespace Server_Space_Analyzer
             // 
             // username_textbox
             // 
-            this.username_textbox.Location = new System.Drawing.Point(70, 10);
+            this.username_textbox.Location = new System.Drawing.Point(70, 30);
             this.username_textbox.Name = "username_textbox";
             this.username_textbox.Size = new System.Drawing.Size(100, 20);
             this.username_textbox.TabIndex = 2;
             // 
             // password_textbox
             // 
-            this.password_textbox.Location = new System.Drawing.Point(70, 40);
+            this.password_textbox.Location = new System.Drawing.Point(70, 60);
             this.password_textbox.Name = "password_textbox";
             this.password_textbox.PasswordChar = '•';
             this.password_textbox.Size = new System.Drawing.Size(100, 20);
@@ -72,7 +72,7 @@ namespace Server_Space_Analyzer
             // 
             // ok_button
             // 
-            this.ok_button.Location = new System.Drawing.Point(52, 70);
+            this.ok_button.Location = new System.Drawing.Point(52, 90);
             this.ok_button.Name = "ok_button";
             this.ok_button.Size = new System.Drawing.Size(75, 23);
             this.ok_button.TabIndex = 4;
@@ -83,17 +83,19 @@ namespace Server_Space_Analyzer
             // label1
             // 
             this.status_label.AutoSize = true;
-            this.status_label.Location = new System.Drawing.Point(10, 70);
+            this.status_label.Location = new System.Drawing.Point(0, 10);
             this.status_label.Name = "StatusLabel";
-            this.status_label.Size = new System.Drawing.Size(160, 13);
+            this.status_label.Size = new System.Drawing.Size(180, 13);
             this.status_label.TabIndex = 5;
-            this.status_label.Text = "";
+            this.status_label.Text = "Enter Network Admin Credentials";
+            this.status_label.AutoSize = false;
+            this.status_label.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(180, 100);
+            this.ClientSize = new System.Drawing.Size(180, 120);
             this.Controls.Add(this.status_label);
             this.Controls.Add(this.ok_button);
             this.Controls.Add(this.password_textbox);
@@ -104,7 +106,6 @@ namespace Server_Space_Analyzer
             this.Text = "Server Space Analyzer";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
