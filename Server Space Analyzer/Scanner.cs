@@ -12,7 +12,7 @@ namespace Server_Space_Analyzer
     {
         private Credential my_credential;
         private Formatter my_formatter = new Formatter();
-        private List<String> errors = new List<String>();
+        private String errors = "Can't connect to:\n";
 
         public Scanner(Credential the_credential)
         {
@@ -21,23 +21,28 @@ namespace Server_Space_Analyzer
 
         public List<List<String>> scan(String the_server)
         {
+            Console.WriteLine(the_server);
             List<List<String>> data = new List<List<String>>();
-            try
+            /*try
             {
                 ConnectionOptions options = new ConnectionOptions();
                 options.Username = my_credential.getUsername();
                 options.Password = my_credential.getPassword();
-                String name_space = @"\\";
+                String name = @"\\";
                 if (the_server != "")
                 {
-                    name_space += the_server;
+                    name += the_server;
                 }
                 else
                 {
-                    name_space += ".";
+                    name += ".";
                 }
-                name_space += @"\root\cimv2";
-                ManagementObjectCollection collection = new ManagementObjectSearcher(new ManagementScope(name_space, options), new ObjectQuery("select VolumeName, Name, Size, Freespace from Win32_LogicalDisk where DriveType=3")).Get();
+                name += @"\root\cimv2";
+                ManagementScope scope = new ManagementScope(name, options);
+                ObjectQuery query = new ObjectQuery("select VolumeName, Name, Size, Freespace from Win32_LogicalDisk where DriveType=3");
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher(scope, query);
+                ManagementObjectCollection collection = searcher.Get();
+
                 bool first = true;
                 data.Add(new List<String>());
                 foreach (ManagementObject i in collection)
@@ -60,12 +65,17 @@ namespace Server_Space_Analyzer
             }
             catch
             {
-                if (the_server.Equals(the_server.ToUpper()))
-                {
-                    MessageBox.Show("Can't connect to " + the_server);
-                }
-            }
+                Console.WriteLine("Error");
+                //MessageBox.Show(the_server);
+                //Application.Exit();
+                //errors += the_server + "\n";    
+            }*/
             return data;
+        }
+
+        public String getErrors()
+        {
+            return errors;
         }
     }
 }

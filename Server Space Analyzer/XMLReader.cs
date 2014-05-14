@@ -7,11 +7,11 @@ using System.Xml;
 
 namespace Server_Space_Analyzer
 {
-    public class XMLReader
+    public class RDGReader
     {
-        private XmlDocument my_document = new XmlDocument();;
+        private XmlDocument my_document = new XmlDocument();
 
-        public XMLReader(String the_path)
+        public RDGReader(String the_path)
         {
             my_document.Load(the_path);
         }
@@ -22,7 +22,10 @@ namespace Server_Space_Analyzer
             XmlNodeList nodes = my_document.GetElementsByTagName(the_tag);
             foreach (XmlElement element in nodes)
             {
-                output.Add(element.InnerText);
+                if (element.InnerText.ToUpper().Equals(element.InnerText))
+                {
+                    output.Add(element.InnerText);
+                }
             }
             return output;
         }
