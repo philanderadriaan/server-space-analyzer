@@ -40,7 +40,7 @@ namespace Server_Space_Analyzer
             // username_label
             // 
             this.username_label.AutoSize = true;
-            this.username_label.Location = new System.Drawing.Point(10, 30);
+            this.username_label.Location = new System.Drawing.Point(10, 33);
             this.username_label.Name = "username_label";
             this.username_label.Size = new System.Drawing.Size(55, 13);
             this.username_label.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace Server_Space_Analyzer
             // password_label
             // 
             this.password_label.AutoSize = true;
-            this.password_label.Location = new System.Drawing.Point(10, 60);
+            this.password_label.Location = new System.Drawing.Point(10, 63);
             this.password_label.Name = "password_label";
             this.password_label.Size = new System.Drawing.Size(53, 13);
             this.password_label.TabIndex = 1;
@@ -106,10 +106,12 @@ namespace Server_Space_Analyzer
             this.Text = "Server Space Analyzer";
             this.ResumeLayout(false);
             this.PerformLayout();
+
+            this.CenterToScreen();
         }
 
         #endregion
-
+        
         private System.Windows.Forms.Label username_label;
         private System.Windows.Forms.Label password_label;
         private System.Windows.Forms.TextBox username_textbox;
