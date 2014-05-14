@@ -78,7 +78,7 @@
             this.ok_button.UseVisualStyleBackColor = true;
             this.ok_button.Click += new System.EventHandler(this.ok_button_Click);
             // 
-            // Form1
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,10 +88,11 @@
             this.Controls.Add(this.username_textbox);
             this.Controls.Add(this.password_label);
             this.Controls.Add(this.username_label);
-            this.Name = "Form1";
-            this.Text = "Login";
+            this.Name = "LoginForm";
+            this.Text = "Server Space Analyzer";
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.CenterToScreen();
 
         }
 
