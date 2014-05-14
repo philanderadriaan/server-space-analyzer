@@ -87,7 +87,7 @@ namespace Server_Space_Analyzer
             this.status_label.Name = "StatusLabel";
             this.status_label.Size = new System.Drawing.Size(180, 13);
             this.status_label.TabIndex = 5;
-            this.status_label.Text = "Enter Network Admin Credentials";
+            this.status_label.Text = "Enter Admin Credentials";
             this.status_label.AutoSize = false;
             this.status_label.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -108,6 +108,7 @@ namespace Server_Space_Analyzer
             this.PerformLayout();
 
             this.CenterToScreen();
+            this.AcceptButton = ok_button;
         }
 
         #endregion
